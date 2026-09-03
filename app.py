@@ -1,10 +1,17 @@
+import os
+try:
+    from api.index import app as app, handler as handler
+except Exception:
+    app = None
+    handler = None
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import os
 import plotly.graph_objects as go
 import plotly.express as px
+
 
 # =========================================================
 # PAGE CONFIG
