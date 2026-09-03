@@ -13,6 +13,9 @@ app = FastAPI(
     version="1.0.0"
 )
 
+handler = app
+
+
 # Enable CORS for Next.js frontend & local development
 app.add_middleware(
     CORSMiddleware,
